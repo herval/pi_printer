@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/twitter_client'
+require_relative '../lib/printer'
+
+
+
+# initialize the Printer
+printer = Printer.new
+
+# initialize the Twitter client
+config = {
+  consumer_key: "NANANA",
+  consumer_secret: "NANANA",
+  access_token: "NANANA",
+  access_token_secret: "NANANA",
+  search_term: "justin bieber"
+}
+twitter_client = TwitterClient.new(config)
+
+# run in loop
+twitter_client.listen do |tweet|
+  printer.print(tweet)
+end
