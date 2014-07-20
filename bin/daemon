@@ -12,8 +12,6 @@ printer = Printer.new
 config = {
   consumer_key: "NANANA",
   consumer_secret: "NANANA",
-  access_token: "NANANA",
-  access_token_secret: "NANANA",
   search_term: "justin bieber"
 }
 twitter_client = TwitterClient.new(config)

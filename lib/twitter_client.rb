@@ -7,8 +7,6 @@ class TwitterClient
     @client = Twitter::REST::Client.new do |config|
       config.consumer_key = configuration_options[:consumer_key]
       config.consumer_secret = configuration_options[:consumer_secret]
-      config.access_token = configuration_options[:access_token]
-      config.access_token_secret = configuration_options[:acces_token_secret]
     end
   end
 
