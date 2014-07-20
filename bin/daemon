@@ -12,7 +12,8 @@ printer = Printer.new
 config = {
   consumer_key: "NANANA",
   consumer_secret: "NANANA",
-  search_term: "justin bieber"
+  search_term: "justin bieber",
+  refresh_seconds: 5
 }
 twitter_client = TwitterClient.new(config)
 
